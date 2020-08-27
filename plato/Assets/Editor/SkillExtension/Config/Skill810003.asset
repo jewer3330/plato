@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill810003
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 3510451496172295094, guid: e5b7090de6586f148a9c3e7acdceeecc,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''skill2'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 29c5d03e64eb49e449b4896a603d0344, type: 2}
+    triggleName: skill2
+    duration: 1.9666668
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_Arctus_attack_03.prefab'',LifeTime
+      =1.944089,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0),IsWorld
+      = false}'
+    time: 0
+    active: 1
+    effect: {fileID: 8177584509190120105, guid: 182eedbccaa2a574ebd829d1717bbcb1,
+      type: 3}
+    lifeTime: 1.9440889
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 0
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_Arctus_eye_01.prefab'',LifeTime
+      =0.7930746,Path = ''Dummy_root/Bip01/Bip01-Pelvis/Bip01-Spine/Bip01-Spine1/Bip01-Spine2/Bip01-Neck/Bip01-Head/Bip01-HeadNub'',Speed
+      = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(1,1,1),Euler
+      = CS.UnityEngine.Vector3(0,0,0),IsWorld = false}'
+    time: 1.1657983
+    active: 1
+    effect: {fileID: 4853237746623014464, guid: ff8bbb8b03cfe054fb1dcc96b7253f64,
+      type: 3}
+    lifeTime: 0.7930746
+    transform: {fileID: 0}
+    transformPath: Dummy_root/Bip01/Bip01-Pelvis/Bip01-Spine/Bip01-Spine1/Bip01-Spine2/Bip01-Neck/Bip01-Head/Bip01-HeadNub
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 0
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes: []
+  attackNodes: []
+  attackCircleNodes:
+  - luaConfig: '{ Event = ''AttackCircle'', UseType = ''Player'',Radius = 10}'
+    time: 1.2149135
+    active: 1
+    type: 1
+    radius: 10

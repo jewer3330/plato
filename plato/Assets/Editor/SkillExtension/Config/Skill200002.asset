@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill200002
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 4298658987379684555, guid: e37a7df82e5605b4eaa8b89270ffadca,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''skill'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6f9a638d38bbf3c47912acd4a3cb6b83, type: 2}
+    triggleName: skill
+    duration: 2.4666667
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/skill01_02.prefab'',LifeTime
+      =1,Path = ''root_bone/l_portalBase_bone/l_portal_bone'',Speed = 0,Offset =
+      CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(0,0,0),Euler =
+      CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 1573677677894916339, guid: 824c80c07e111f7458958a8dff6074ca,
+      type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: root_bone/l_portalBase_bone/l_portal_bone
+    transformIndex: 4
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 0, y: 0, z: 0}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/skill01_02.prefab'',LifeTime
+      =1,Path = ''root_bone/r_portalBase_bone/r_portal_bone'',Speed = 0,Offset =
+      CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(0,0,0),Euler =
+      CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 1573677677894916339, guid: 824c80c07e111f7458958a8dff6074ca,
+      type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: root_bone/r_portalBase_bone/r_portal_bone
+    transformIndex: 114
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 0, y: 0, z: 0}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/skill01_01.prefab'',LifeTime
+      =1,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(1,1,1),Euler
+      = CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 5931951207985093398, guid: 8bfca14e267843648a41bc3f40866620,
+      type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes:
+  - luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/Arts/Effect/Prefabs/skill_01_hit.prefab'',LifeTime
+      =1,IsTrigger = true}'
+    time: 0
+    active: 1
+    effect: {fileID: 4520570498231034871, guid: 3e23787118b31194d82ce1660269aca4,
+      type: 3}
+    lifeTime: 1
+  attackNodes: []
+  attackCircleNodes:
+  - luaConfig: '{ Event = ''AttackCircle'', UseType = ''Enemy'',Radius = 2}'
+    time: 0
+    active: 1
+    type: 0
+    radius: 2

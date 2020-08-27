@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100008
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 1808117356985009756, guid: 37d5eb48b6afd654482992093642e8fe,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - Name: PlayAnimationNode
+    luaConfig: '{ Event = ''PlayAnimation'',Name = ''Cast Spell 02'' }'
+    time: 0
+    control: {fileID: 9100000, guid: 6f198a37e254a8649ba1b13d9b490cc5, type: 2}
+    triggleIndex: 23
+    triggleName: Cast Spell 02
+  playEffectNodes: []
+  fireBulletNodes:
+  - Name: FireBulletNode
+    luaConfig: '{Event=''FireBullet'',Res = ''Assets/EpicToonFX/Prefabs/Combat/Missiles/Nuke/NukeMissileBlue.prefab'',LifeTime
+      =1.161612,Offset = CS.UnityEngine.Vector3 (0.1245652,1.72,0.3234519),Speed
+      = 10,Dir = CS.UnityEngine.Vector3 (0,0,1), }'
+    time: 0.48494464
+    effect: {fileID: 165292, guid: 0be5aadc5891ed24688334e31db5abcd, type: 3}
+    lifeTime: 1.1616116
+    speed: 10
+    dir: {x: 0, y: 0, z: 1}
+    offset: {x: 0.12456517, y: 1.72, z: 0.3234519}

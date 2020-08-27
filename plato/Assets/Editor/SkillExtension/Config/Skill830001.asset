@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill830001
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 1721771860863628543, guid: 34e50b43791e1b248a419cf525281f81,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 7bf645d2d204b53419ee361f10eb9771, type: 2}
+    triggleName: attack
+    duration: 0.33333334
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_Monster03_attack_01.prefab'',LifeTime
+      =0.3789564,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 699029231341931508, guid: 22735c9f65adcf5418694d3768b4f3cc, type: 3}
+    lifeTime: 0.3789564
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  fireBulletNodes:
+  - luaConfig: '{Event=''FireBullet'',Res = ''Assets/Arts/Effect/Prefabs/fx_Monster03_attack_02.prefab'',LifeTime
+      =1.942388,Offset = CS.UnityEngine.Vector3(0,1.15,0.892),Speed = 10,Dir = CS.UnityEngine.Vector3(0,0,1),
+      AlwaysAttack = 1,Path = '''',Scale = CS.UnityEngine.Vector3(0,0,0),Euler =
+      CS.UnityEngine.Vector3(0,0,0),TargetPath = ''''}'
+    time: 0.2173774
+    active: 1
+    effect: {fileID: 6216835381113700181, guid: 0c6dfaec87fa67c44aaf8fb82b03546b,
+      type: 3}
+    lifeTime: 1.9423876
+    speed: 10
+    dir: {x: 0, y: 0, z: 1}
+    offset: {x: 0, y: 1.15, z: 0.892}
+    alwaysAttack: 1
+    localScale: {x: 0, y: 0, z: 0}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    transformTarget: {fileID: 0}
+    transformPathTarget: 
+    transformIndexTarget: 0
+  triggerAnimationNodes: []
+  triggerEventNodes:
+  - luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_Monster03_attack_03.prefab'',LifeTime
+      =1,IsTrigger = true}'
+    time: 1.1627071
+    active: 1
+    effect: {fileID: 2839720670746753101, guid: d3400a9a72a760c46b832f5f5e2515d8,
+      type: 3}
+    lifeTime: 1
+  attackNodes: []
+  attackCircleNodes: []

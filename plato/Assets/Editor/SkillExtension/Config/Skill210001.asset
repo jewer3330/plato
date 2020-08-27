@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill210001
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 8915825108471826493, guid: f956e9624202b704189ef64bbd449b0e,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 9df67e55d72b71f46a0709d97a95f964, type: 2}
+    triggleName: attack
+    duration: 1.3333334
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_TraumaGuard_attack_01.prefab'',LifeTime
+      =1,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(-0.51,0,0.574),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 3558507766309232522, guid: 16e53059fcf90e149bc3848bc77ce4cf,
+      type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: -0.51, y: 0, z: 0.574}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes:
+  - luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_TraumaGuard_hit.prefab'',LifeTime
+      =0.1936116,IsTrigger = true}'
+    time: 0.56792724
+    active: 1
+    effect: {fileID: 7841270272956046174, guid: cabe2045c3171cb41b2d52f7b97606df,
+      type: 3}
+    lifeTime: 0.19361156
+  attackNodes:
+  - luaConfig: '{ Event = ''Attack''}'
+    time: 0.56205934
+    active: 1
+  attackCircleNodes: []

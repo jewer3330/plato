@@ -1,0 +1,16 @@
+字段备注	字段备注	特效类型（1一次性，2子弹类，3其它）	文件名 [预制体的名称]：所有特效预制体放在一个规定文件夹	是否循环	缩放比例[可以按照人物自身的缩放比例来]
+id	effectname	effecttype	filename	isloop	scale
+INT32	STRING	INT32	STRING	BOOL	FLOAT
+1000	选中光圈	0	Combat/Magic/Circle/MagicCircleBlue	1	1
+2000	矮人-技能1-攻击-刀光	1	Combat/Sword/SwordSlash/SwordSlashRed	0	1
+2001	矮人-技能1-受击-爆炸	1	Combat/Brawling/RoundHit/RoundHitRed	0	1
+2100	德鲁伊-普攻-子弹	2	Combat/Missiles/Fireball/FireballMissileGreen	0	1
+2101	德鲁伊-技能加血-攻击	1	Interactive/Healing/HealNova	0	1
+2102	德鲁伊-技能加血-受击	1	Interactive/Healing/HealStream	0	1
+2200	女巫-普攻-子弹	2	Combat/Missiles/NovaSmall/NovaMissileSmallBlue	0	1
+2201	女巫-技能1-子弹	2	Combat/Missiles/Nuke/NukeMissileBlue	0	1
+2300	暗夜精灵-技能1-刀光	1	Combat/Sword/SwordSlash/SwordSlashYellow	0	1
+2301	暗夜精灵-技能1-受击	1	Combat/Brawling/RoundHit/RoundHitYellow	0	1
+2400	恶魔术士-普攻-子弹	2	Combat/Missiles/Soul/SoulMissileCrimson	0	1
+2401	恶魔术士-技能1-攻击	1	Interactive/Portals/SoftPortal/SoftPortalPurple	0	1
+2402	恶魔术士-技能2-受击	1	Combat/Death/SuperEvilDeath	0	1

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100001
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 5826425169685645848, guid: 03859f1c68c38004494157d4f464fbe3,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - Name: PlayAnimationNode
+    luaConfig: '{ Event = ''PlayAnimation'',Name = ''Melee Right Attack 03'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6f198a37e254a8649ba1b13d9b490cc5, type: 2}
+    triggleIndex: 18
+    triggleName: Melee Right Attack 03
+  playEffectNodes: []
+  fireBulletNodes:
+  - Name: FireBulletNode
+    luaConfig: '{Event=''FireBullet'',Res = '''',LifeTime =2.002732,Offset = CS.UnityEngine.Vector3
+      (0.007565162,1.079,0.1834519),Speed = 10,Dir = CS.UnityEngine.Vector3 (0,0,1),
+      }'
+    time: 0.39222696
+    active: 1
+    effect: {fileID: 0}
+    lifeTime: 2.0027318
+    speed: 10
+    dir: {x: 0, y: 0, z: 1}
+    offset: {x: 0.0075651617, y: 1.079, z: 0.18345189}
+  triggerAnimationNodes:
+  - Name: TriggerAnimationNode
+    luaConfig: '{ Event = ''TriggerAnimation'',Name = ''Take Damage'',IsTrigger =
+      true }'
+    time: 1.3458225
+    active: 1
+    control: {fileID: 9100000, guid: 6f198a37e254a8649ba1b13d9b490cc5, type: 2}
+    triggleIndex: 29
+    triggleName: Take Damage
+  triggerEventNodes:
+  - Name: TriggerEffectNode
+    luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/EpicToonFX/Prefabs/Combat/Explosions/FireballExplosion/ExplosionFireballGreen.prefab'',LifeTime
+      =0.6664614,IsTrigger = true}'
+    time: 1.3458225
+    active: 1
+    effect: {fileID: 150592, guid: 2c82b2af38b82f442bd9a24539b8d33c, type: 3}
+    lifeTime: 0.6664614

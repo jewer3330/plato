@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100013
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 5185312542301459905, guid: d8304c457e7b0f74fa7d3797733c1652,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''skill2'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6599acd811212334c97b15e1951d0aa4, type: 2}
+    triggleName: skill2
+    duration: 2.0666668
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_hero_female_skill02_01.prefab'',LifeTime
+      =2.06433,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0),IsWorld
+      = true}'
+    time: 0
+    active: 1
+    effect: {fileID: 1034569640747584918, guid: a195ea3fb2b06854f8290ca2b495ba4c,
+      type: 3}
+    lifeTime: 2.0643303
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 1
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_hero_female_skill02_02.prefab'',LifeTime
+      =2.06433,Path = ''RootBone/Bip001/Bip001 Prop1/WuQi_guadian_r'',Speed = 0,Offset
+      = CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(1,1,1),Euler
+      = CS.UnityEngine.Vector3(0,0,0),IsWorld = true}'
+    time: 0
+    active: 1
+    effect: {fileID: 5589373094315791287, guid: 736de68993f9f3e4581f64b9f16bca98,
+      type: 3}
+    lifeTime: 2.0643303
+    transform: {fileID: 0}
+    transformPath: RootBone/Bip001/Bip001 Prop1/WuQi_guadian_r
+    transformIndex: 110
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 1
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_hero_female_skill02_03.prefab'',LifeTime
+      =2.06433,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0),IsWorld
+      = true}'
+    time: 0
+    active: 1
+    effect: {fileID: 996649539957361161, guid: 4948ceb6d41c1504e8ab041e8c6e6b3b, type: 3}
+    lifeTime: 2.0643303
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 1
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes: []
+  attackNodes: []
+  attackCircleNodes:
+  - luaConfig: '{ Event = ''AttackCircle'', UseType = ''Player'',Radius = 4}'
+    time: 0.43877628
+    active: 1
+    type: 1
+    radius: 4

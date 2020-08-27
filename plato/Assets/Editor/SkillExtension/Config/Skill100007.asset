@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100007
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 4298658987379684555, guid: e37a7df82e5605b4eaa8b89270ffadca,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - Name: PlayAnimationNode
+    luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 2a25d6b98bdfe8448873f8faa449f756, type: 2}
+    triggleName: attack
+    duration: 1.1666667
+  playEffectNodes:
+  - Name: PlayEffectNode
+    luaConfig: '{Event=''PlayEffect'',Res = ''Assets/EpicToonFX/Prefabs/Interactive/Healing/HealNova.prefab'',LifeTime
+      =1,Path = '''',Speed = 0}'
+    time: 0
+    active: 1
+    effect: {fileID: 185744, guid: b88a52d0de3924c4db6011de30ecccd0, type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+  fireBulletNodes: []
+  triggerAnimationNodes:
+  - Name: TriggerAnimationNode
+    luaConfig: '{ Event = ''TriggerAnimation'',Name = ''hit'',IsTrigger = true }'
+    time: 0.55110586
+    active: 1
+    control: {fileID: 9100000, guid: 2a25d6b98bdfe8448873f8faa449f756, type: 2}
+    triggleIndex: 2
+    triggleName: hit
+  triggerEventNodes:
+  - Name: TriggerEffectNode
+    luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/EpicToonFX/Prefabs/Interactive/Healing/HealStream.prefab'',LifeTime
+      =1,IsTrigger = true}'
+    time: 0.55110586
+    active: 1
+    effect: {fileID: 107290, guid: 88fdae94c8d9f23439038e9e33b18681, type: 3}
+    lifeTime: 1
+  attackNodes: []
+  attackCircleNodes:
+  - Name: AttackCircleNode
+    luaConfig: '{ Event = ''AttackCircle'', UseType = ''Player'',Radius = 10}'
+    time: 0.5416852
+    active: 1
+    type: 1
+    radius: 10

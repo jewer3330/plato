@@ -1,0 +1,12 @@
+玩家	玩家名称	玩家等级	角色性别（0：女性，1：男性）	角色标识（用于角色站位规划的标识，1：坦克；2：战士输出；3：刺客输出；4：远程输出，5：治疗，6：其它，Tag数字越小，站位优先级越高）	模型:目前只有模型，后面分解avatar	角色头像	技能列表	移动速度	待机动作	跑动动作	死亡动作	受击动作	最大血	最大的蓝	基础伤害	基础防御	模型修正系数	血条高度系数	名字高度系数
+id	name	level	rolesex	Professiontag	model	head	learnedskilllist	movespeed	idle	run	death	hit	maxhp	maxmp	basedamage	basedefense	BodyModify	hpbarheight	nameheight
+INT32	STRING	INT32	INT32	INT32	STRING	STRING	STRING	INT32	STRING	STRING	STRING	STRING	INT32	INT32	INT32	INT32	FLOAT	FLOAT	FLOAT
+101	矮人	10	1	1	Character_BR_Dwarf_01	Character_BR_Dwarf_01	100001;100006	4	Idle	Run Without Root Motion	Die	Take Damage	2000	500	60	10	1	1	1
+201	德鲁伊	10	1	5	Character_ForestGuardian_01	Character_ForestGuardian_01	100002;100007	4	Idle	Run Without Root Motion	Die	Take Damage	2000	500	60	10	1	1	1
+301	女巫	10	0	4	Character_ForestWitch_01	Character_ForestWitch_01	100003;100008	4	Idle	Female Run Without Root Motion	Die	Take Damage	2000	500	60	10	1	1	1
+401	暗夜精灵	10	1	2	Character_DarkElf_01	Character_DarkElf_01	100004;100009	4	Idle	Run Without Root Motion	Die	Take Damage	2000	500	60	10	1	1	1
+501	恶魔术士	10	1	4	Character_SpiritDemon_01	Character_SpiritDemon_01	100005;100010	4	Idle	Run Without Root Motion	Die	Take Damage	2000	500	60	10	1	1	1
+601	誓约之剑	10	0	1	hero_female_001	Character_SpiritDemon_01	100011;100012;100013;100014;100015	4	idle	run	die	hit	30000	8000	60	10	1	1.5	1
+602	Mori	10	0	4	Mori	Character_SpiritDemon_01	200001;200002	4	idle	run	die	hit	30000	500	60	10	0.6	1.2	1
+603	TraumaGuard	10	1	2	TraumaGuard	Character_SpiritDemon_01	210001;210002	4	idle	run	die	hit	30000	500	60	10	0.6	1.2	1
+604	英灵之剑	10	1	1	TraumaGuard	Character_SpiritDemon_01	220001;220002;220003;220004;220005	4	idle	run	die	hit	30000	500	60	10	1	1.2	1

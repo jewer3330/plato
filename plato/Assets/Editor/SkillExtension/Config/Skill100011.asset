@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100011
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 5185312542301459905, guid: d8304c457e7b0f74fa7d3797733c1652,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6599acd811212334c97b15e1951d0aa4, type: 2}
+    triggleName: attack
+    duration: 2.1666667
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/fx_hero_female_attack_01.prefab'',LifeTime
+      =2.172518,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale
+      = CS.UnityEngine.Vector3(1,1,1),Euler = CS.UnityEngine.Vector3(0,0,0),IsWorld
+      = true}'
+    time: 0
+    active: 1
+    effect: {fileID: 577643840600868083, guid: 87509a849acdf2548ac0a424baafb06a, type: 3}
+    lifeTime: 2.1725185
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    isWorld: 1
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes: []
+  attackNodes:
+  - luaConfig: '{ Event = ''Attack''}'
+    time: 0.26117685
+    active: 1
+  - luaConfig: '{ Event = ''Attack''}'
+    time: 0.6529422
+    active: 1
+  - luaConfig: '{ Event = ''Attack''}'
+    time: 1.4264275
+    active: 1
+  attackCircleNodes: []

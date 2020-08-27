@@ -1,0 +1,43 @@
+﻿/* !!auto gen do not change
+ 
+ */
+
+using UnityEngine;
+using System.Collections;
+
+namespace Table
+{
+    public class TableLoad
+    {
+/*
+        public static void LoadFromMemory()
+        {
+{LoadFromMemory}
+        }
+*/
+        public static void LoadFromResources()
+        {
+{LoadFromResource}
+        }
+
+        public static void LoadBinFromResources()
+        {
+{LoadBinFromResource}
+        }
+/*
+        public static void LoadFromStreaming()
+        {
+{LoadFromStreaming}
+        }
+*/
+        public static void Clear()
+        {
+{Clear}
+        }
+		
+        public static void UnLoad()
+        {
+{UnLoad}
+        }
+    }
+}

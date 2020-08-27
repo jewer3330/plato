@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill840001
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 1999879875995417274, guid: 99c9dcb15eaf3944f85780e2d9d36db1,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: d814740336fb648459779a09864d8bbc, type: 2}
+    triggleName: attack
+    duration: 0.40000004
+  playEffectNodes: []
+  fireBulletNodes: []
+  triggerAnimationNodes: []
+  triggerEventNodes: []
+  attackNodes:
+  - luaConfig: '{ Event = ''Attack''}'
+    time: 0.18248907
+    active: 1
+  attackCircleNodes: []

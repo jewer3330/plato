@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill100006
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 5826425169685645848, guid: 03859f1c68c38004494157d4f464fbe3,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - Name: PlayAnimationNode
+    luaConfig: '{ Event = ''PlayAnimation'',Name = ''Melee Right Attack 02'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6f198a37e254a8649ba1b13d9b490cc5, type: 2}
+    triggleIndex: 17
+    triggleName: Melee Right Attack 02
+  playEffectNodes:
+  - Name: PlayEffectNode
+    luaConfig: '{Event=''PlayEffect'',Res = ''Assets/EpicToonFX/Prefabs/Combat/Sword/SwordSlash/SwordSlashRed.prefab'',LifeTime
+      =0.07690427,Path = ''Root/Hips/Spine_01/Spine_02/Spine_03/Clavicle_R/Shoulder_R/Elbow_R/Hand_R'',Speed
+      = 0}'
+    time: 0.3831691
+    active: 1
+    effect: {fileID: 171468, guid: 9bb3c2595cddc25468a1fccc3b563ae4, type: 3}
+    lifeTime: 0.07690427
+    transform: {fileID: 0}
+    transformPath: Root/Hips/Spine_01/Spine_02/Spine_03/Clavicle_R/Shoulder_R/Elbow_R/Hand_R
+    transformIndex: 26
+  fireBulletNodes:
+  - Name: FireBulletNode
+    luaConfig: '{Event=''FireBullet'',Res = '''',LifeTime =1.999382,Offset = CS.UnityEngine.Vector3
+      (-0.02315226,0.869,0.7234519),Speed = 30,Dir = CS.UnityEngine.Vector3 (0,0,1),
+      }'
+    time: 0.45147398
+    active: 1
+    effect: {fileID: 0}
+    lifeTime: 1.9993815
+    speed: 30
+    dir: {x: 0, y: 0, z: 1}
+    offset: {x: -0.023152256, y: 0.869, z: 0.72345185}
+  triggerAnimationNodes:
+  - Name: TriggerAnimationNode
+    luaConfig: '{ Event = ''TriggerAnimation'',Name = ''Take Damage'',IsTrigger =
+      true }'
+    time: 1.4877123
+    active: 1
+    control: {fileID: 9100000, guid: 6f198a37e254a8649ba1b13d9b490cc5, type: 2}
+    triggleIndex: 29
+    triggleName: Take Damage
+  triggerEventNodes:
+  - Name: TriggerEffectNode
+    luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/EpicToonFX/Prefabs/Combat/Brawling/RoundHit/RoundHitRed.prefab'',LifeTime
+      =0.4815721,IsTrigger = true}'
+    time: 1.4877123
+    active: 1
+    effect: {fileID: 107336, guid: 3547e5e490f502041ae6e8a59042e4bd, type: 3}
+    lifeTime: 0.4815721

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a0045363c2734da2ea6a964456039, type: 3}
+  m_Name: Skill200001
+  m_EditorClassIdentifier: 
+  skillOwner: {fileID: 4298658987379684555, guid: e37a7df82e5605b4eaa8b89270ffadca,
+    type: 3}
+  eventNodes: []
+  animationNodes:
+  - luaConfig: '{ Event = ''PlayAnimation'',Name = ''attack'' }'
+    time: 0
+    active: 1
+    control: {fileID: 9100000, guid: 6f9a638d38bbf3c47912acd4a3cb6b83, type: 2}
+    triggleName: attack
+    duration: 1.6000001
+  playEffectNodes:
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/attack_01.prefab'',LifeTime
+      =1,Path = '''',Speed = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(1,1,1),Euler
+      = CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 1626956976080666, guid: f39c011ff598ec5479f7e1a799edcb4e, type: 3}
+    lifeTime: 1
+    transform: {fileID: 0}
+    transformPath: 
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 1, y: 1, z: 1}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  - luaConfig: '{Event=''PlayEffect'',Res = ''Assets/Arts/Effect/Prefabs/attack_hand.prefab'',LifeTime
+      =3.682019,Path = ''root_bone/pelvis_bone/spine1_bone/spine3_bone/spine4_bone/r_clavicle_bone/r_arm_bone/r_forearm_bone/r_hand_bone/tagWeaponRight_bone'',Speed
+      = 0,Offset = CS.UnityEngine.Vector3(0,0,0),Scale = CS.UnityEngine.Vector3(0,0,0),Euler
+      = CS.UnityEngine.Vector3(0,0,0)}'
+    time: 0
+    active: 1
+    effect: {fileID: 1329032039112108, guid: 70003a9c894ead445920e826f9148c97, type: 3}
+    lifeTime: 3.6820188
+    transform: {fileID: 0}
+    transformPath: root_bone/pelvis_bone/spine1_bone/spine3_bone/spine4_bone/r_clavicle_bone/r_arm_bone/r_forearm_bone/r_hand_bone/tagWeaponRight_bone
+    transformIndex: 0
+    localPosition: {x: 0, y: 0, z: 0}
+    localScale: {x: 0, y: 0, z: 0}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+  fireBulletNodes:
+  - luaConfig: '{Event=''FireBullet'',Res = ''Assets/Arts/Effect/Prefabs/attack_ball.prefab'',LifeTime
+      =2,Offset = CS.UnityEngine.Vector3(0,0,0),Speed = 10,Dir = CS.UnityEngine.Vector3(0,0,1),
+      AlwaysAttack = 1,Path = ''root_bone/pelvis_bone/spine1_bone/spine3_bone/spine4_bone/r_clavicle_bone/r_arm_bone/r_forearm_bone/r_hand_bone/tagWeaponRight_bone'',Scale
+      = CS.UnityEngine.Vector3(0,0,0),Euler = CS.UnityEngine.Vector3(0,0,0),TargetPath
+      = ''''}'
+    time: 0.56447774
+    active: 1
+    effect: {fileID: 1363815243406748, guid: d6528685b0b18864c99f88866ca9129e, type: 3}
+    lifeTime: 2
+    speed: 10
+    dir: {x: 0, y: 0, z: 1}
+    offset: {x: 0, y: 0, z: 0}
+    alwaysAttack: 1
+    localScale: {x: 0, y: 0, z: 0}
+    localEulerAngles: {x: 0, y: 0, z: 0}
+    transform: {fileID: 0}
+    transformPath: root_bone/pelvis_bone/spine1_bone/spine3_bone/spine4_bone/r_clavicle_bone/r_arm_bone/r_forearm_bone/r_hand_bone/tagWeaponRight_bone
+    transformIndex: 0
+    transformTarget: {fileID: 0}
+    transformPathTarget: 
+    transformIndexTarget: 0
+  triggerAnimationNodes: []
+  triggerEventNodes:
+  - luaConfig: '{Event=''TriggerEffect'',Res = ''Assets/Arts/Effect/Prefabs/attack_02.prefab'',LifeTime
+      =1,IsTrigger = true}'
+    time: 1.491452
+    active: 1
+    effect: {fileID: 1187600689695366, guid: 8ba451cde0457aa4eb2603c64a4397c4, type: 3}
+    lifeTime: 1
+  attackNodes: []
+  attackCircleNodes: []
