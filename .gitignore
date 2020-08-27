@@ -1,0 +1,7 @@
+*.sln
+*.csproj
+*.suo
+plato/Library/
+plato/Logs/
+plato/obj/
+plato/Temp/
