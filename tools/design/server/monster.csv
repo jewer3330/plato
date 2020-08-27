@@ -1,0 +1,22 @@
+怪物ID,怪物名称,怪物等级,怪物模型,头像资源,技能列表，用分号分割,移动速度,待机动作,跑动动作,死亡动作,受击动作,最大生命,最大魔法,基础伤害,基础防御,模型修正系数,动画播放速度,是否BOSS,血条高度系数,名字高度系数,脚下光圈半径
+id,name,level,model,head,learnedskilllist,movespeed,idle,run,death,hit,maxhp,maxmp,basedamage,basedefense,BodyModify,AnimationSpeed,IsBoss,hpbarheight,nameheight,ringradius
+INT32,STRING,INT32,STRING,STRING,STRING,INT32,STRING,STRING,STRING,STRING,INT32,INT32,INT32,INT32,FLOAT,FLOAT,INT32,FLOAT,FLOAT,FLOAT
+801,蛇发法师,10,Character_Medusa_01,Character_Medusa_01,800001,3,Idle,Female Run Without Root Motion,Die,Take Damage,500,100,30,10,1,1,0,1,1,1
+811,阿努比斯,10,Character_AncientWarrior_01,Character_AncientWarrior_01,800002,3,Idle,Run Without Root Motion,Die,Take Damage,500,100,30,10,1,1,0,1,1,1
+821,亡灵刺客,10,Character_EvilGod_01,Character_EvilGod_01,800003,3,Idle,Run Without Root Motion,Die,Take Damage,500,100,30,10,1,1,0,1,1,1
+831,兽人,10,Character_BR_BigOrk_01,Character_BR_BigOrk_01,800004,3,Idle,Run Without Root Motion,Die,Take Damage,500,100,30,10,1,1,0,1,1,1
+841,黑骑士,10,Character_BR_Slayer_01,Character_BR_Slayer_01,800005,3,Idle,Giant Run Without Root Motion,Die,Take Damage,1000,100,60,10,1,1,0,1,1,1
+851,小食人魔,10,Character_BR_PigButcher_01,Character_BR_PigButcher_01,800006,3,Idle,Giant Run Without Root Motion,Die,Take Damage,500,100,30,10,1,1,0,1,1,1
+861,大食人魔,10,Character_BR_Troll_01,Character_BR_Troll_01,800007,3,Idle,Giant Run Without Root Motion,Die,Take Damage,1000,100,60,10,1,1,0,1,1,1
+871,亡灵战士,10,Character_BR_BarbarianGiant_01,Character_BR_BarbarianGiant_01,800008,3,Idle,Creepy Run Without Root Motion,Die,Take Damage,1000,100,60,10,1,1,0,1,1,1
+881,山岭巨人,10,Character_BR_ElementalGolem_01,Character_BR_ElementalGolem_01,800009,3,Idle,Giant Run Without Root Motion,Die,Take Damage,1000,100,60,10,1,1,0,1,1,1
+891,遗迹守护者,10,Character_BR_FortGolem_01,Character_BR_FortGolem_01,800010,3,Idle,Giant Run Without Root Motion,Die,Take Damage,1500,100,60,10,1,1,1,1,1,1
+901,巨熊佐拉姆,10,Monster_Boss,Monster02,810001;810002;810003;810004,3,idle,run,die,hit,10000,100,60,10,2,1,1,4,1,2.5
+902,蜘蛛,10,Monster02,Monster02,820001,3,idle,run,die,hit,1500,100,60,10,0.7,0.5,0,1,1,1
+903,海马侍从,10,Monster03,Monster03,830001;830002,3,idle,run,die,hit,2000,100,60,10,1.7,0.5,0,2,1,1
+904,林地野猪,10,Monster04,Monster04,840001,3,idle,run,die,hit,2000,100,60,10,0.5,0.5,0,1,1,1
+905,小蘑菇,10,Monster05,Monster05,850001,3,idle,run,die,hit,1500,100,60,10,0.5,0.5,0,1,1,1
+906,蘑菇先锋,10,Monster06,Monster06,860001,3,idle,run,die,hit,2000,100,60,10,0.5,0.5,0,1.2,1,1
+907,林地掠夺者,10,Monster07,Monster07,870001,3,idle,run,die,hit,1500,100,60,10,0.5,0.5,0,2,1,1
+908,食人花,10,Monster08,Monster08,880001,3,idle,run,die,hit,1500,100,60,10,1.2,0.5,0,1.5,1,1
+909,螃蟹,10,Monster09,Monster09,890001,3,idle,run,die,hit,1500,100,60,10,1.2,0.5,0,1.2,1,1
